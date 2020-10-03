@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css">
     <script src="https://js.arcgis.com/4.16/"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/mainesri.css" rel="stylesheet" />
     <script src="~/Scripts/bootstrap.js"></script>
     <script src="~/Scripts/jquery-3.4.1.js"></script>
     <script>
@@ -129,23 +129,26 @@
 
         .title {
             background-color: #343a40;
-            height: 70px;
+            height: 60px;
             text-align: center;
             color: #fff;
             font-size: 25px;
-            padding-top: 17px;
+            padding-top: 11px;
             text-transform: uppercase;
-            margin-bottom : 0;
+            margin-bottom: 0;
+            border-bottom : 1px solid gray;
         }
+
         #viewDiv {
             height: 100%;
             width: 100%;
             padding: 0;
             margin: 0;
         }
+
         .mainMap {
-            height : calc(100% - 60px);
-            display : block;
+            height: calc(100% - 60px);
+            display: block;
         }
     </style>
 </head>
@@ -159,16 +162,28 @@
     <div class="main-padding">
 
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-2">
+                <div class="left-col">
+                    <div>
+                        <button class="btn btn-primary" id="btnLoad">Load Data</button>
+                        <button class="btn btn-danger" id="btnStop">Stop loading</button>
+                    </div>
+                    <div class="section-panel">
+                        <header class="panel-heading">
+                            <h2 class="panel-title">Tra cứu</h2>
+                            <p class="panel-subtitle">Tìm kiếm thông tin</p>
+                        </header>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="col-md-10">
                 <div class="mainMap">
                     <div id="viewDiv"></div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <button id="btnLoad">Load Data</button>
-                <br />
-                <button id="btnStop">Stop Display data</button>
-            </div>
+
         </div>
     </div>
 
