@@ -179,6 +179,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-datetimepicker.css" />
+    <Content Include="Content\bootstrap-datetimepicker.min.js" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -188,6 +190,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\datepicker.css" />
     <Content Include="Content\datepicker3.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\jquery-1.11.1.min.js" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.theme.css" />
     <Content Include="Content\mainesri.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -195,8 +201,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

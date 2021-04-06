@@ -80,15 +80,15 @@
     .title-container .glyphicon {
         position: absolute;
         left: 0;
-        top: 2;
+        top: 2px;
     }
     .flight-text{
         padding-left : 30px;
     }
 
 .search-panel .panel-body {
-    height: calc(100% - 440px);
-    overflow : scroll;
+    /*height: calc(100% - 440px);*/
+    
 }
 .search-panel .well{
     margin-bottom : 10px;
@@ -100,4 +100,13 @@
 #counting {
     font-style: italic;
     font-size: 13px;
+}
+.btnSearch{
+    margin-top: 10px;
+}
+.timeinput{
+    margin-top : 10px;
+}
+.table-map tbody tr{
+    cursor : pointer;
 }
